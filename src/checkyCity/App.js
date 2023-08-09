@@ -128,15 +128,6 @@ function App() {
    }
 
 
-  //     ------------edit item--------------
-  // function editItem(e, ind){
-  //   e.preventDefault();
-  //   const updatedItems = addedData.filter((item, index) => index !== ind);
-   
-  //   return  setAddedData(updatedItems);
-  //  }
-
-
   //    ---------selecet contry data--------  
  function addContryData(e){
   e.preventDefault() 
@@ -236,8 +227,7 @@ function addStatedata(e){
                 <td>{item[0]}</td>
                 <td>{item[1]}</td>
                 <td>{item[2]}</td> 
-                <tr> <button onClick={(e) =>deleteItem(e, index)}>X</button></tr>
-                {/* <tr> <button onClick={(e) =>editItem(e, index)}>/</button></tr> */}
+                <tr> <button onClick={(e) =>deleteItem(e, index)}>X</button></tr> 
               </tr>
             );
           })}
