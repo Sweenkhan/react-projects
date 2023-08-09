@@ -3,8 +3,7 @@ import axios from "axios"
 
 function App() {
 
-    const[totalTeam, setTotalTeam] = useState([])
-    const[formatData, setFormatData] = useState([])
+    const[totalTeam, setTotalTeam] = useState([]) 
 
     useEffect(() => {
 
@@ -12,14 +11,7 @@ function App() {
          .then((result) => {
              console.log(result.data)
              setTotalTeam(result.data)
-             
-             totalTeam.map((team) => {
- 
-               return  setFormatData(team.NRR.sort((a, b) => b - a))
-                
-             }) 
-               
- 
+              
          })
     },[])
 
