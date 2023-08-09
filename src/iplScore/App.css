@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+thead {
+    background-color: #00008b;
+    color: #ffffff;
+}
+
+tbody {
+    background-color: #f2f2f2;
+}

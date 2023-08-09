@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(214, 163, 163);
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.random {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
