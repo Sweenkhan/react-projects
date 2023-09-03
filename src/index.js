@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Portal from './portal/Portal';
+import App from "./interview/App"
+// import Portal from './portal/Portal';
 // import App from "./checkyCity/App"
 // import App from "./useEffect/App"
 // import App from "./netflix/App"
@@ -15,7 +16,7 @@ import Portal from './portal/Portal';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render( 
-    <Portal /> 
+    <App /> 
 );
 
  
