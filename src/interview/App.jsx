@@ -9,16 +9,8 @@ function App() {
     ]
 
 
-    const [selectedValue, setSelectedValue] = useState("")
-    // const [index, setIndex] = useState(0)
-
- console.log(selectedValue)
-    // function handleInput(e) {
-    //     e.preventDefault();
-    //        console.log(e.target.value)
-    //        setIndex(index)
-    //        console.log("how are u")
-    // }
+    const [selectedValue, setSelectedValue] = useState("") 
+ 
 
   return (
     <div className='container'>
