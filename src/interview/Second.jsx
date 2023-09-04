@@ -40,7 +40,7 @@ function Second() {
               type="checkbox"
               value={clr}
               id={index}
-              onChange={(e) => handleChange(e, index)}
+              onClick={(e) => handleChange(e, index)}
             ></input>
             <label htmlFor={index}>{clr}</label>
             {selectedColor[index] === index ? (
