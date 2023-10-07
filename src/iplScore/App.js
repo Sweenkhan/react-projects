@@ -1,7 +1,6 @@
 import  React, {useState, useEffect} from "react" 
 import axios from "axios"
 
-
 function App() {
 
     const[totalTeam, setTotalTeam] = useState([]) 
@@ -12,7 +11,6 @@ function App() {
          .then((result) => {
              console.log(result.data)
              setTotalTeam(result.data)
-              
          })
     },[])
 
