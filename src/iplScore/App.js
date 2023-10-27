@@ -14,7 +14,6 @@ function App() {
          .then((result) => {
              console.log(result.data)
              setTotalTeam(result.data)
-              
          })
     },[])
 
