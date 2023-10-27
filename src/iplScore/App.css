@@ -4,9 +4,35 @@ body {
     box-sizing: border-box;
 }
 
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+button{
+    background-color: yellow; 
+    margin-top: 20px;
+}
+
+.title{
+    margin-bottom: 10px;
+}
+
 thead {
-    background-color: #00008b;
+    background-color: #1d1d88;
     color: #ffffff;
+}
+
+table, tr,td{
+    border: 1px solid black;
+    margin: 0;
+}
+
+td{
+    padding: 3px 7px;
 }
 
 tbody {

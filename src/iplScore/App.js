@@ -1,5 +1,8 @@
 import  React, {useState, useEffect} from "react" 
 import axios from "axios"
+import {jsPDF} from "jspdf"
+import "jspdf-autotable"
+import "./App.css"
 
 function App() {
 
@@ -15,11 +18,23 @@ function App() {
          })
     },[])
 
+
+   async function exportPdf(){
+ 
+    const doc = new jsPDF()
+
+    doc.autoTable({
+      html: "#myTable"
+    })
+
+    doc.save("iplData.pdf")
+    }
+
      
-  return (
-    <>
-    <h1 class="title">IPL Season 2022 Points</h1>
-    <table>
+  return ( 
+    <div className="container"> 
+    <h1 class="title">IPL Season 2022 Points</h1> 
+    <table id="myTable">
       <thead>
         <tr>
           <th>No</th>
@@ -50,7 +65,9 @@ function App() {
     } 
       </tbody>
     </table>
- </>
+    
+    <button onClick={() => {exportPdf()}}>Export</button>
+    </div> 
   )
 }
 
