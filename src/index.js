@@ -12,7 +12,8 @@ import './index.css';
 // import App from "./tic tac toc/App"
 //  import App from "./axios/App"
 // import App from "./tesla/App.jsx"
-import App from "./iplScore/App"
+// import App from "./iplScore/App"
+import App from './axiosDiffrentWay/App';
  
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
