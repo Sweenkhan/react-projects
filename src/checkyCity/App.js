@@ -82,8 +82,6 @@ function App() {
   }, [selectedState]);
 
 
-
-
   //    ------------Adding Data to an array
 
   function addData(e) {
