@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-
-
 function App() {
+
 
     const[data, setData] = useState({})
 
     const getApiData = async() => {
-
         try{ 
             const result = await axios.get("https://randomuser.me/api/")
             setData(result.data.results[0])
@@ -38,5 +36,6 @@ function App() {
   
   );
 }
+
 
 export default App;
