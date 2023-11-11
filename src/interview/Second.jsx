@@ -21,6 +21,7 @@ function Second() {
     }
   }
 
+  
   function handleDelete(e, index) {
     e.preventDefault();
     const result = color.filter((clr, clrIndex) => {
