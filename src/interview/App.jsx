@@ -15,7 +15,6 @@ function App() {
   return (
     <div className='container'>
         <h2>Choose anyone</h2>
-
         <select onChange={e => setSelectedValue(e.target.value)}  defaultValue="placeholder" > 
         <option value="placeholder" disabled>Choose contry</option>
         {
@@ -24,7 +23,6 @@ function App() {
             })
         }
         </select>
-
         {/* chosse city */}
             <select>
         {
