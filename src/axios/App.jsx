@@ -20,15 +20,10 @@ function App() {
             setName(result[0].email)
         })
        
-
-
     }
-
-
 
   return (
       <>
-
         <button onClick={getRandomData}>Get Random User Data</button>
          <div>
             <img src={photo} alt={name} />
